@@ -18,9 +18,11 @@ player = Player()
 car_manager = CarManager()
 scoreboard = Scoreboard()
 
+#Enabling the turtle to move up when pressing the up key
 screen.listen()
 screen.onkey(player.move_up, "Up")
 
+#Game loop
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
